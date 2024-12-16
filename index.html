@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <main>
+      <div id="text-container"><span id="text"></span></div>
+      <div>
+        <button onclick="addText('0')">0</button>
+        <button onclick="addText('1')">1</button>
+        <button onclick="addText('2')">2</button>
+        <button class="operator-button" onclick="addText('+')">+</button>
+      </div>
+      <div>
+        <button onclick="addText('3')">3</button>
+        <button onclick="addText('4')">4</button>
+        <button onclick="addText('5')">5</button>
+        <button class="operator-button" onclick="addText('-')">-</button>
+      </div>
+      <div>
+        <button onclick="addText('6')">6</button>
+        <button onclick="addText('7')">7</button>
+        <button onclick="addText('8')">8</button>
+        <button class="operator-button" onclick="addText('*')">x</button>
+      </div>
+      <div>
+        <button onclick="addText('9')">9</button>
+        <button id="c-button" onclick="eraseAll()">C</button>
+        <button id="eval-button" onclick="calculateResult()">=</button>
+        <button class="operator-button" onclick="addText('/')">/</button>
+      </div>
+    </main>
+    <script src="math.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
